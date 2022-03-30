@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: service-producer
+  datasource:
+    url: jdbc:mysql://wuzx.cool:30006/lagou?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl  #避免将驼峰命名转换为下划线命名
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: wuzx.cool:30000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
