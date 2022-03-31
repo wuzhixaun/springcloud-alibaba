@@ -8,12 +8,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-producer" />
+        <module name="service-consumer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="service-consumer" target="11" />
+      <module name="service-producer" target="11" />
+      <module name="springcloud-alibaba" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="service-consumer" options="-parameters" />
       <module name="service-producer" options="-parameters" />
+      <module name="springcloud-alibaba" options="" />
     </option>
   </component>
 </project>
