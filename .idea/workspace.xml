@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1470a57b-737f-4780-8a0e-44dbc844d265" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-consumer/src/main/java/com/wuzx/ConsumerServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-consumer/src/main/java/com/wuzx/controller/ServerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-consumer/src/main/java/com/wuzx/feign/ProducerFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-producer/src/main/java/com/wuzx/controller/ServerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="1470a57b-737f-4780-8a0e-44dbc844d265" name="Changes" comment="feat: 增加feign服务调用">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-producer/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-producer/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,8 +133,16 @@
       <updated>1648655134663</updated>
       <workItem from="1648655136119" duration="3000000" />
       <workItem from="1648658498266" duration="227000" />
-      <workItem from="1648740334788" duration="2993000" />
+      <workItem from="1648740334788" duration="3627000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: 增加feign服务调用">
+      <created>1648745026321</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648745026321</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,5 +159,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 增加feign服务调用" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 增加feign服务调用" />
   </component>
 </project>
