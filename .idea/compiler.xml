@@ -21,7 +21,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="service-consumer" options="-parameters" />
       <module name="service-producer" options="-parameters" />
-      <module name="springcloud-alibaba" options="" />
+      <module name="springcloud-alibaba" options="-parameters" />
     </option>
   </component>
 </project>

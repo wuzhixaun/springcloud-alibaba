@@ -17,4 +17,14 @@ public class ServerController {
     public String getProducerInfo() {
         return producerFeign.getServerInfo();
     }
+
+    @GetMapping("/timeout")
+    public String testTimeOut() {
+        try {
+            Thread.sleep(5000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return producerFeign.getServerInfo();
+    }
 }
