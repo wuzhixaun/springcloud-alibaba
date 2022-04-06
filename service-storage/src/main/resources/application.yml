@@ -1,0 +1,17 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: service-storage
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://wuzx.cool:30006/seata_storage?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    password: 123456
+    username: root
+  # nacos配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: wuzx.cool:30000
+        username: nacos
+        password: nacos

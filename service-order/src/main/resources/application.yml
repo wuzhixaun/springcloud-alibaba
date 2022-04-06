@@ -1,0 +1,17 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: service-order
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://wuzx.cool:30006/seata_order?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    password: 123456
+    username: root
+  # nacos配置
+  cloud:
+    nacos:
+      discovery:
+        server-addr: wuzx.cool:30000
+        username: nacos
+        password: nacos

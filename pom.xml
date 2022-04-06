@@ -6,6 +6,11 @@
     <modules>
         <module>service-producer</module>
         <module>service-consumer</module>
+        <module>common-db</module>
+        <module>service-order</module>
+        <module>service-bussiness</module>
+        <module>service-points</module>
+        <module>service-storage</module>
     </modules>
 
     <!--spring boot 父启动器依赖-->
