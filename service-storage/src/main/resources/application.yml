@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: service-storage
+  # 依赖公共模块依赖
+  profiles:
+    active: seata
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://wuzx.cool:30006/seata_storage?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8&useSSL=false

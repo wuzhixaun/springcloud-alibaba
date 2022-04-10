@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.wuzx",exclude = DataSourceAutoConfiguration.class)
 @EnableDiscoveryClient
 @MapperScan(basePackages = {"com.wuzx.points.mapper"}) // mybatis包扫描
 public class PointsApplication {
