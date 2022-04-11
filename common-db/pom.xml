@@ -12,8 +12,8 @@
     <artifactId>common-db</artifactId>
 
     <properties>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -27,7 +27,6 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.26</version><!--依据自己本地数据库的版本进行跳转 -->
         </dependency>
         <!--添加druid连接池 依赖 -->
         <dependency>
@@ -37,11 +36,9 @@
         </dependency>
 
 
-        <!--seata依赖-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-alibaba-seata</artifactId> <!--排除低版本seata依赖-->
-            <version>2.2.0.RELEASE</version>
+            <artifactId>spring-cloud-starter-alibaba-seata</artifactId>
             <exclusions>
                 <exclusion>
                     <artifactId>seata-all</artifactId>
@@ -49,8 +46,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
-        <!--添加高版本seata依赖-->
         <dependency>
             <groupId>io.seata</groupId>
             <artifactId>seata-all</artifactId>
