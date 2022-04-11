@@ -19,11 +19,6 @@ spring:
         server-addr: wuzx.cool:30000
         username: nacos
         password: nacos
-      #config就是新加的
-      config:
-        type: nacos
-        nacos:
-          server-addr: wuzx.cool:30000
 ribbon:
   ###指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所用的时间。
   ReadTimeout: 500000
